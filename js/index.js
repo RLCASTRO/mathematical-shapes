@@ -10,7 +10,7 @@ const sideB = 9;
  * Calculate the diagonal of a squere of given sides 'a and b' length
  * @param {int} a
  * @param {int} b
- * @returns
+ * @returns {number} that representes the diagonal of a square
  */
 const getDiagonalOfSquare = (a, b) => {
   return Math.sqrt(a * a + b * b);
@@ -59,6 +59,11 @@ try {
 // i. When trying to find these values, you will need to use PI. Remember constants?
 const radius = 4;
 
+/**
+ * Returns a string representation of the circumference and area of a circle
+ * @param {int} radius 
+ * @returns {string} with the value of circumference and area of a circle
+ */
 const getCircumferenceAndArea = (radius) => {
   const circumference = 2 * Math.PI * radius;
   const area = Math.PI * radius * radius;
