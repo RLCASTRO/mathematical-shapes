@@ -33,10 +33,11 @@ const triangleSideB = 6;
 const triangleSideC = 7;
 
 /**
- * Calculates the area of a triangle
+ * Calculates the area of a triangle using the Heron's formula
  * @param {int} a -> side A of the triangle
  * @param {int} b -> side B of the triangle
  * @param {int} c -> side C of the triangle
+ * @returns {number} The area of the triangle
  */
 const getAreaOfTriangle = (a, b, c) => {
   return 0.25 * Math.sqrt((a + b + c) * (-a + b + c) * (a - b + c) * (a + b - c));
@@ -73,5 +74,5 @@ try {
   console.log('====== Exercise C ======');
   console.log(getCircumferenceAndArea(radius));
 } catch (error) {
-  console.log(`Error calculating the area of the circle: ${error}`);
+  console.log(`Error calculating the area or circumference of the circle: ${error}`);
 }
